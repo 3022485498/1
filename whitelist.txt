@@ -1,6 +1,5 @@
 local Players = game:GetService("Players")
 
--- 允许使用脚本的用户名列表
 local whitelistedUsernames = {
     "CH3022485498",
 }
@@ -14,13 +13,11 @@ local function isWhitelisted(player)
     return false
 end
 
--- 检查当前玩家
 local player = Players.LocalPlayer
 if not isWhitelisted(player) then
     player:Kick("您不在白名单中")
     return
 end
 
--- 在这里继续执行你的脚本内容
 print("白名单验证通过，欢迎 " .. player.Name)
-https://gist.github.com/3022485498/144197eaf68cd26723ced1eadc71e66d
+loadstring(game:HttpGet("https://gist.githubusercontent.com/3022485498/144197eaf68cd26723ced1eadc71e66d/raw/62e7b992968b9b3e7338b6cb34b029114cd434a7/gistfile1.txt"))()
